@@ -35,11 +35,8 @@ module.exports = (env) => ({
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
           'style-loader',
-          // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
           'sass-loader',
         ],
       },
@@ -57,8 +54,21 @@ module.exports = (env) => ({
     ],
   },
   plugins: [new HtmlWebpackPlugin({
-    template: 'index.html',
+    filename: "index.html",
+    template: './index.html',
   }),
+    new HtmlWebpackPlugin({
+      filename: "feedback.html",
+      template: './feedback.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: "list_of_entries.html",
+      template: './list_of_entries.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: "entry_page.html",
+      template: './entry_page.html',
+    }),
   new MiniCssExtractPlugin(),
   new ESLintPlugin(),
   ],

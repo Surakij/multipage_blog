@@ -1,0 +1,33 @@
+.main_form {
+  //border: 1px solid red;
+
+}
+textarea{
+  background:transparent;
+  color: palegoldenrod;
+  text-shadow: 1px 1px 5px black;
+}
+label {
+  font-size: 24px;
+  display: block;
+  color: black;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 5px palegoldenrod;
+}
+
+.button {
+
+  font-family: Impact, fantasy;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background: #b9b490;
+  padding: 5px 10px;
+  cursor: pointer;
+  &:hover {
+    background: palegoldenrod;
+  }
+}
+.wrapper_button {
+  margin-top: 10px;
+}
