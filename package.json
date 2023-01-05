@@ -41,6 +41,7 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
@@ -48,5 +49,4 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   }
-
 }

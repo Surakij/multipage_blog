@@ -28,10 +28,10 @@ module.exports = (env) => ({
           },
         },
       },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
+      // {
+      //   test: /\.css$/i,
+      //   use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      // },
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -69,7 +69,9 @@ module.exports = (env) => ({
       filename: "entry_page.html",
       template: './entry_page.html',
     }),
-  new MiniCssExtractPlugin(),
+  new MiniCssExtractPlugin({
+    filename: "[name].css"
+  }),
   new ESLintPlugin(),
   ],
   optimization: {

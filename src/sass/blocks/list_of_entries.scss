@@ -1,26 +1,20 @@
 
-
 .list_list-of-entry {
   font-size: 18px;
   color: black;
-  //border: 1px solid gold;
   margin: 0;
   padding: 0;
   text-align: center;
-}
 
-.list_list-of-entry li {
-  list-style-type: none;
-  margin: 0;
-  padding: 3px;
-  justify-self: center;
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    justify-self: center;
 
-}
-.list_list-of-entry li a {
-  //border: 1px solid gold;
-  margin: 0;
-  color: black;
-  &:hover {
-    color: palegoldenrod;
+    a {
+      margin: 0;
+      color: black;
+    }
   }
 }
