@@ -28,10 +28,6 @@ module.exports = (env) => ({
           },
         },
       },
-      // {
-      //   test: /\.css$/i,
-      //   use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      // },
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -54,23 +50,23 @@ module.exports = (env) => ({
     ],
   },
   plugins: [new HtmlWebpackPlugin({
-    filename: "index.html",
+    filename: 'index.html',
     template: './index.html',
   }),
-    new HtmlWebpackPlugin({
-      filename: "feedback.html",
-      template: './feedback.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: "list_of_entries.html",
-      template: './list_of_entries.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: "entry_page.html",
-      template: './entry_page.html',
-    }),
+  new HtmlWebpackPlugin({
+    filename: 'feedback.html',
+    template: './feedback.html',
+  }),
+  new HtmlWebpackPlugin({
+    filename: 'list_of_entries.html',
+    template: './list_of_entries.html',
+  }),
+  new HtmlWebpackPlugin({
+    filename: 'entry_page.html',
+    template: './entry_page.html',
+  }),
   new MiniCssExtractPlugin({
-    filename: "[name].css"
+    filename: '[name].css',
   }),
   new ESLintPlugin(),
   ],

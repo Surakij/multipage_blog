@@ -14,11 +14,7 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
-    'max-len': ['error', {
-      code: 500,
-      ignoreComments: true,
-    },
-    ],
+    'max-len': 'off',
     'no-shadow': 'off',
     'no-plusplus': 'off',
     'no-void': 'off',
@@ -37,5 +33,9 @@ module.exports = {
     'vars-on-top': 'off',
     'consistent-return': 'off',
     'guard-for-in': 'off',
+    'no-new-func': 'off',
+    'no-cond-assign': 'off',
+    'no-useless-escape': 'off',
+    'no-restricted-globals': 'off',
   },
 };
