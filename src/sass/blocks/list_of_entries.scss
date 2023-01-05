@@ -1,0 +1,20 @@
+
+.list_list-of-entry {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    justify-self: center;
+
+    a {
+      margin: 0;
+      color: black;
+    }
+  }
+}
