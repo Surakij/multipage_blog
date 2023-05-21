@@ -1,0 +1,59 @@
+// Define variables
+$next_prev_button_font_size: 1.5rem;
+$next_prev_button_opacity: 0.7;
+
+// Main slider container styles
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px 0 0;
+
+  // Slide list styles
+  .slide-list {
+    position: relative;
+    left: 0;
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+    width: 2304px;
+    height: 400px;
+    transition: all ease 1s;
+    list-style-type: none;
+  }
+
+  // Previous Button Styles
+  .prev-button {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    font-size: $next_prev_button_font_size;
+    cursor: pointer;
+    z-index: 1;
+    opacity: $next_prev_button_opacity;
+    transition: opacity ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // Next Button Styles
+  .next-button {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: $next_prev_button_font_size;
+    cursor: pointer;
+    z-index: 1;
+    opacity: $next_prev_button_opacity;
+    transition: opacity ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -37,5 +37,12 @@ module.exports = {
     'no-cond-assign': 'off',
     'no-useless-escape': 'off',
     'no-restricted-globals': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'always',
+      },
+    ],
   },
 };

@@ -1,23 +1,29 @@
-
-.main_list {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.main_main {
+  position: relative;
   display: grid;
+  grid-template-rows: fit-content;
 
-  li {
-    list-style-type: none;
+  .main_list {
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    text-align: center;
+    position: relative;
     justify-self: center;
 
-    a {
-      text-shadow: 0 0 5px palegoldenrod;
-      font-size: 24px;
+    li {
+      list-style-type: none;
       margin: 0;
-      color: black;
+      padding: 5px;
+
+      a {
+        text-shadow: 0 0 5px palegoldenrod;
+        font-size: 24px;
+        margin: 0;
+        color: black;
+        &:hover {
+          color: palegoldenrod;
+        }
+      }
     }
   }
-
-
 }
