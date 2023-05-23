@@ -1,0 +1,80 @@
+@import "blocks/main.scss";
+@import "blocks/list_of_entries.scss";
+@import "blocks/feedback.scss";
+@import "blocks/entry_page.scss";
+
+$body-color: #b9b490;
+$wrapper-max-size: 768px;
+$wrapper-min-size: 320px;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Impact, fantasy;
+  color: $body-color;
+  padding: 0;
+  background-image: url("../../asset/body_background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    max-width: $wrapper-max-size;
+    min-width: $wrapper-min-size;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+
+    .header {
+      align-self: center;
+      justify-items: center;
+
+      h1 {
+        margin: 5px;
+        padding: 0 0 0 10px;
+        text-align: center;
+      }
+    }
+    .main {
+      margin-top: 60px;
+      padding: 0;
+      text-align: center;
+      align-self: center;
+    }
+
+    .footer {
+      position: relative;
+      align-self: center;
+      margin-top: auto;
+      height: 60px;
+
+      .footer_list {
+        margin: 0;
+        padding: 0;
+        line-height: 60px; 
+        display: flex;  
+        list-style: none;  
+
+        li {
+          margin-right: 5px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+  a {
+    color: $body-color;
+    text-decoration: none;
+    &:hover {
+      color: palegoldenrod;
+    }
+  }
+}
